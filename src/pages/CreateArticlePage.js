@@ -48,7 +48,7 @@ export class CreateArticlePage {
   async fillTagsField(text) {
     await test.step(`Fill in the "Enter tags" field`, async () => {
       await this.tagsField.fill(text);
-      await this.tagsField.press('Enter');
+      await this.page.keyboard.press('Enter');
     });
   }
 }

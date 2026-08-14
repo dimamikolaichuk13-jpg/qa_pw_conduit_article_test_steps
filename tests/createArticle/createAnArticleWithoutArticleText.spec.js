@@ -26,7 +26,7 @@ test.beforeEach(async ({ page }) => {
   await homePage.assertYourFeedTabIsVisible();
 });
 
-test('Create created an article without article text', async () => {
+test('Created an article without article text”', async () => {
   await homePage.clickNewArticleLink();
 
   await createArticlePage.fillTitleField(
