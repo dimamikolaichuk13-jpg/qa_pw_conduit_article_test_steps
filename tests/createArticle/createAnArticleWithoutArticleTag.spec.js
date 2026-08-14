@@ -30,7 +30,7 @@ test('Create an article with required and optional fields', async () => {
   await homePage.clickNewArticleLink();
 
   await createArticlePage.fillTitleField(
-    'Test created an article with required and optional fields',
+    'Test created an article without article tag',
   );
   await createArticlePage.fillArticleAboutField('Test1');
   await createArticlePage.fillInputArticleField(
